@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #55be78;
+    color: white;
+    height: 65px;
+    display: flex;
+    font-size: 27px;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+}
+.gameContainor{
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.Containor{
+    display: grid;
+    grid-template-columns: repeat(3 , 10vw);
+    grid-template-rows: repeat(3 , 10vw);
+   font-family: 'Josefin Sans', sans-serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box:hover{
+    background-color: rgb(170, 126, 170);
+}
+
+.gameInfo{
+    padding: 0 34px;
+
+}
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+ .imgg img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+#reset{
+    margin: 0 23px;
+    padding: 6px 14px;
+    background: #55be78;
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+@media screen and (max-width:950px)
+{
+    .gameContainor{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1 {
+        font-size: 2.5rem;
+    }
+    .Containor{
+        grid-template-columns: repeat(3 , 20vw);
+    grid-template-rows: repeat(3 , 20vw);
+    }
+}
